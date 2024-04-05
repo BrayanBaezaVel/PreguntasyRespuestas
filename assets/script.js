@@ -6,10 +6,10 @@ class Pregunta {
     }
 }
 
-let pregunta1 = new Pregunta("¿Cuál es la capital de Francia?", ["Paris", "Bogotá", "Londres", "Barcelona"], "Paris");
-let pregunta2 = new Pregunta("¿Cuál es la mitad de 2 + 1?", ["3", "1.5", "1", "2"], "2");
-let pregunta3 = new Pregunta("¿Quién escribió Romeo y Julieta?", ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"], "William Shakespeare");
-let pregunta4 = new Pregunta("¿Cuál es la fórmula química del agua?", ["H", "O2", "H2o", "CO2"], "H2o");
+let pregunta1 = new Pregunta("¿Cuál es la capital de Francia?", ["a) Paris", "b) Bogotá", "c) Londres", "d) Barcelona"], "a");
+let pregunta2 = new Pregunta("¿Cuál es la mitad de 2 + 1?", ["a) 3", "b) 1.5", "c) 1", "d) 2"], "d");
+let pregunta3 = new Pregunta("¿Quién escribió Romeo y Julieta?", ["a) Charles Dickens", "b) William Shakespeare", "c) Jane Austen", "d) Mark Twain"], "b");
+let pregunta4 = new Pregunta("¿Cuál es la fórmula química del agua?", ["a) H", "b) O2", "c) H2o", "d) CO2"], "c");
 
 class JuegoPreguntas {
     constructor(preguntas, puntuacion, preguntaActual) {
