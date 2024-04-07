@@ -36,23 +36,30 @@ class JuegoPreguntas {
 
     obtenerRespuesta() {
         let that = this;
-        document.getElementById("avanzar").addEventListener("click", function () {
+        // let respuesta = document.getElementById("respuesta").value;
+        // let preguntaActual = that.obtenerPreguntaActual();
+        document.getElementById("validar").addEventListener("click", function () {
             let respuesta = document.getElementById("respuesta").value;
             let preguntaActual = that.obtenerPreguntaActual();
             console.log(preguntaActual);
             console.log(preguntaActual.respuestaCorrecta);
             document.getElementById("respuesta").value = "";
+            let resultado = document.getElementById("resultado")
             if (preguntaActual.respuestaCorrecta === respuesta) {
-                console.log("¡Respuesta correcta!");
+                let resultado = ("Respuesta Correcta");
+                document.getElementById("resultado").innerText = resultado;
+                console.log(resultado);
                 that.puntuacion += 100;
                 console.log("Puntuación actual: " + that.puntuacion);
             } else {
+                let resultado = ("Respuesta Incorrecta");
+                document.getElementById("resultado").innerText = resultado;
                 console.log("Respuesta incorrecta");
                 console.log("Puntuación actual: " + that.puntuacion);
             }
-
             that.actualizarPuntuacion();
-
+        })
+        document.getElementById("avanzar").addEventListener("click", function () {
             if (that.preguntaActual < that.preguntas.length - 1) {
                 that.preguntaActual++;
                 that.obtenerPreguntaActual();
@@ -60,8 +67,13 @@ class JuegoPreguntas {
                 document.getElementById("fin-juego").style.display = "block";
                 console.log('Fin del juego');
             }
-        });
-    }
+
+        })
+
+
+
+
+    };
 }
 
 let juegoPreguntas = new JuegoPreguntas([pregunta1, pregunta2, pregunta3, pregunta4], 0, 0);

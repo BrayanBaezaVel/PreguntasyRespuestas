@@ -1,22 +1,27 @@
 body {
-    background-color: #4085ca;
-  }
-  .container {
-    margin-top: 50px;
-  }
-  .card {
-    border: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  .card-header {
-    background-color: #6c757d;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  .card-body {
-    padding: 30px;
-  }
-  #fin-juego {
-    margin-top: 20px;
-  }
+  background-color: #4085ca;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #6c757d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+#fin-juego {
+  margin-top: 20px;
+}
